@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               
+               
+     <bean class="com.iruka.Student" name="student" >
+     <property name="name" value="abhijeet" />
+     <property name="usn" value="1RV20MC043" />
+     <property name="address" value="Belgaum" />
+     <property name="fee" value="50000" />
+     </bean>
+     
+     <!-- Second way -->
+     <bean class="com.iruka.Student" name="student2"  p:name="Amandeep" p:usn="1RV20MC033" p:address="bengalore" p:fee="60000"/>
+ 
+</beans>
